@@ -27,7 +27,7 @@ The **codes** directory contains the scripts for all the method steps described 
 
 The figure above describes the main step of the PRR, organized between the *Training* and *Classification Modules*. The basis of the *Training Module* is *step #1*, *Prototyping*. In the *Prototyping*, the training images provide samples for a heuristic designed for obtaining class prototypes (*codevectors*) and organized in *codebooks*. For each class, the *codebook* consists of different block sizes and number of prototypes, defined in parameters. In *step #2*, *Quantization*, the training images are reconstructed with the *codevectors* obtained in the previous step. A measure of information complexity is calculated in *step #3*, *Measurement*. The best training parameters for each class are selected in *step #4*, *Validation*. These validated parameters are applied over *Classification Module* in *step #5 Quantization* of the test images. Finally, in *step #6*, the decision process for the test samples is performed. Each of these steps was implemented in Python scripts available in the *codes* directory and will be detailed below.
 
-## Base de dados
+## Dataset
 The GHIM-10k dataset[1] was used, originally composed of 20 scene categories, each one with 500 images of dimensions 400x300 or 300x400 pixels in JPEG format. Twelve classes were selected, with 100 images each, from the original dataset: *tree, aircraft, field, car, building, moto-racing, flower, firework, mountain, motorcycle, sunset and beach. Some classes were selected so that contained elements in common with others classes, to avoid biased training models. The figure below shows a sample of each class used in the experiments.
 
 ![](https://github.com/rdffeitosa/prr/blob/master/dataset/dataset.png)
