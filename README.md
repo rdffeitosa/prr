@@ -47,7 +47,7 @@ SINTAXE
 
 classifierPRR.py --input-folder *<folder path with images for classification>* --measure-engine *<zip, gzip, bzip2, LZWHuffman or entropy>* --classes-parameters *<tuple of classes and parameters used for classification between "..."*>* --training-file *<training data file>* --quantization-colors *<number of colors>* [--number-processes *<number of parallel processes>* --id-experiment *<identification of experiments>* archive-results verbose-mode report-mode]
 
-* As tuplas devem ser no formato (('classname', (vector_size, codebook_size)), ('classname', (vector_size, codebook_size)), ..., ('classname', (vector_size, codebook_size)))
+\* As tuplas devem ser no formato (('classname', (vector_size, codebook_size)), ('classname', (vector_size, codebook_size)), ..., ('classname', (vector_size, codebook_size)))
 
 - archive-results: mantém os diretórios criados durante a classificação com as imagens separadas por classe
 - verbose-mode: ativa as mensagens do script
@@ -56,18 +56,28 @@ classifierPRR.py --input-folder *<folder path with images for classification>* -
 EXEMPLO
 
 ```
-python classifierPRR.py --input-folder ../dataset/partitionD/test --measure-engine entropy --classes-parameters "(('aircrafts', (30, 512)), ('beaches', (5, 128)), ('buildings', (5, 256)), ('cars', (25, 512)), ('fields', (5, 128)), ('fireworks', (30, 256)), ('flowers', (25, 256)), ('moto-racings', (10, 256)), ('motorcycles', (15, 512)), ('mountains', (15, 256)), ('sunsets', (5, 128)), ('trees', (5, 256)))" --training-file ../trainedModels/partitionA/trainingData.pckl.bz2 --quantization-colors 256 --number-processes 4 --id-experiment teste_final archive-results verbose-mode report-mode
+python classifierPRR.py --input-folder ../dataset/partitionA/test --measure-engine entropy --classes-parameters "(('aircrafts', (30, 512)), ('beaches', (5, 128)), ('buildings', (5, 256)), ('cars', (25, 512)), ('fields', (5, 128)), ('fireworks', (30, 256)), ('flowers', (25, 256)), ('moto-racings', (10, 256)), ('motorcycles', (15, 512)), ('mountains', (15, 256)), ('sunsets', (5, 128)), ('trees', (5, 256)))" --training-file ../trainedModels/partitionA/trainingData.pckl.bz2 --quantization-colors 256 --number-processes 4 --id-experiment teste_final archive-results verbose-mode report-mode
 ```
 
 ### Módulo de treinamento
 
+Execute os scripts desse módulo em ordem para seguir o pipeline do método. Todos os scripts geram um arquivo *pckl.bz2* com o resultado e um arquivo auxiliar *txt* com os detalhes da execução. Esses arquivos são gerados na raiz do repositório  */prr*.
+
 #### trainingPrototyping.py
 SINTAXE
 
-trainingPrototyping.py --input-folder *<folder path with images for training>* --quantization-colors *<number of colors>* --training-convergence *<convergence value>* [--vectors-sizes *<vectors sizes>* --codebooks-sizes *<number of symbols>* --classes-parameters *<classes and your specific parameters in a list of tuples "(('classname', (vector size, codebook size)), ('classname', (vector size, codebook size)), ..., ('classname', (vector size, codebook size)))">* --number-processes *<number of parallel processes>*]
+trainingPrototyping.py --input-folder *<folder path with images for training>* --quantization-colors *<number of colors>* --training-convergence *<convergence value>* [--vectors-sizes *<vectors sizes>* --codebooks-sizes *<number of symbols>* --classes-parameters *<classes and your specific parameters in a list of tuples "(('classname', (vector size, codebook size)), ('classname', (vector size, codebook size)), ..., ('classname', (vector size, codebook size)))">* --number-processes *<number of parallel processes>*]*
+  
+\* Especifique *--vectors-sizes* e *--codebooks-sizes* para treinar todas as classes com os mesmos parâmetros **OU** *--classes-parameters* para especificar individualmente os parâmetros de treinamento.
 
 EXEMPLO
 
+```
+python trainingPrototyping.py --input-folder ../dataset/partitionA/training --quantization-colors 256 --vectors-sizes '5 10 15 20 25 30' --codebooks-sizes '64 128 256 512' --training-convergence 0.1 --number-processes 4
+```
+```
+python trainingPrototyping.py --input-folder ../dataset/partitionA/training --quantization-colors 256 --classes-parameters "(('aircrafts', (30, 512)), ('beaches', (5, 128)), ('buildings', (5, 256)), ('cars', (25, 512)), ('fields', (5, 128)), ('fireworks', (30, 256)), ('flowers', (25, 256)), ('moto-racings', (10, 256)), ('motorcycles', (15, 512)), ('mountains', (15, 256)), ('sunsets', (5, 128)), ('trees', (5, 256)))" --training-convergence 0.1 --number-processes 4
+```
 
 #### trainingQuantization.py
 SINTAXE
@@ -76,14 +86,22 @@ trainingQuantization.py --input-folder *<input folder with images for quantizati
 
 EXEMPLO
 
+```
+python trainingQuantization.py --input-folder ../dataset/partitionA/training --quantization-colors 256 --training-file ../trainingData.pckl.bz2 --number-processes 4
+```
 
 #### trainingMeasurement.py
 SINTAXE
 
-trainingMeasurement.py --input-data *<input with quantizations data file>* [--training-file *<training data file>*] --measure-engines *<'zip gzip bzip2 LZWHuffman entropy'>* [--number-processes *<number of parallel processes>*]
+trainingMeasurement.py --input-data *<input with quantizations data file>* [--training-file *<training data file>*]* --measure-engines *<'zip gzip bzip2 LZWHuffman entropy'>* [--number-processes *<number of parallel processes>*]
+  
+\* Caso utilize apenas a medida *entropy* em *--measure-engines* não é necessário especificar *--training-file*
 
 EXEMPLO
 
+```
+python trainingMeasurement.py --input-data ../quantizationsData.pckl.bz2 --training-file ../trainingData.pckl.bz2 --measure-engines 'zip gzip bzip2 LZWHuffman entropy' --number-processes 4
+```
 
 #### trainingValidation.py
 SINTAXE
@@ -92,10 +110,19 @@ trainingValidation.py --input-data *<input measures data file>* --reference-rate
 
 EXEMPLO
 
+```
+python trainingValidation.py --input-data ../measurementsData.pckl.bz2 --reference-rate 0.9 --rate-step 0.1 --selected-measures 'zip gzip bzip2 LZWHuffman entropy' --max-memory 0.7 --number-processes 4
+```
 
 #### trainingReportValidation.py
 
 SINTAXE
 trainingReportValidation.py --input-data *<file with best scenarios>*
+  
+* Utilize as tuplas de parâmetros sugeridas para as classes para executar o script *classifierPRR.py*
 
 EXEMPLO
+
+```
+python trainingReportValidation.py --input-data ../bestScenarios.pckl.bz2
+```
