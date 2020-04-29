@@ -1,24 +1,25 @@
 # Pattern Recognition by Randomness (PRR)
 PRR is a machine learning technique for scenes classification that explores the image randomness after data transformations. These transformations are based on the relationship between natural perception of randomness and Kolmogorov's Theory. The more complex the stimulus, the more random it will be perceived. The image data transformations are performed using a lossy compression technique, called Vector Quantization. The quantization eliminates details and expands characteristics, turning the scene more complex. After the transformations, the image randomness is measured using lossless compression as an approximation of Kolmogorov Complexity. In a problem with 12 classes, PRR yielded 0.6967 of accuracy with Shannon's entropy and 0.6350 with compression.
 
-PhD Thesis supervised by Professor PhD Anderson da Silva Soares
+The PRR was developed in the PhD Thesis supervised by Professor PhD Anderson da Silva Soares.
 
 Feitosa, R. D. F. (2020). Scene classification using randomness analysis by approximation of Kolmogorov's complexity. Institute of Informatics, Federal University of Goiás.
 
 The available source code was implemented in Python 2.7 and tested on Linux-based systems.
 
 ## Directories structure
-- codes
-  - include
-- dataset
-   - images
-   - partitionA
-   - partitionB
-   - partitionC
-- trainedModels
-   - partitionA
-   - partitionB
-   - partitionC
+- prr
+- ├── codes
+- │   └── include
+- ├── dataset
+- │   ├── images
+- │   ├── partitionA
+- │   ├── partitionB
+- │   └── partitionC
+- └── trainedModels
+-     ├── partitionA
+-     ├── partitionB
+-     └── partitionC
    
 The **codes** directory contains the scripts for all the method steps described below, as well as auxiliary functions. The **dataset** directory contains the images used in the experiments and 3 suggestions for partitioning between training and test sets. The **trainedModels** directory contains models trained in each of the suggested partitions and the best training parameters for each class.
 
