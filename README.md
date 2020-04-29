@@ -8,8 +8,9 @@ Feitosa, R. D. F. (2020). Scene classification using randomness analysis by appr
 The available source code was implemented in Python 2.7 and tested on Linux-based systems.
 
 ## Directories structure
-- codes
-  - include
+- [prr]
+- [codes]
+  - [include]
 - dataset
    - images
    - partitionA
