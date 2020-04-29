@@ -2,6 +2,7 @@
 PRR is a machine learning technique for scenes classification that explores the randomness caused by data transformations in images. These transformations are based on the relationship between natural perception of randomness and Kolmogorov's Theory. The more complex the stimulus, the more random it will be perceived. The data transformations performed in the images use a lossy compression technique, called vector quantization. Quantization is responsible for eliminating details and expanding characteristics, making the scene more complex. After these transformations, randomness is measured using lossless compression as an approximation of Kolmogorov Complexity. In a problem with 12 classes, PRA yielded an accuracy of 0.6967 with Shannon's entropy and 0.6350 with compression.
 
 PhD Thesis supervised by Professor PhD Anderson da Silva Soares
+
 Feitosa, R. D. F. (2020). Scene classification using randomness analysis by approximation of Kolmogorov's complexity. Institute of Informatics, Federal University of Goiás.
 
 The source code available was coded in Python 2.7 and tested on Linux-based systems.
