@@ -40,7 +40,7 @@ Os modelos pré-treinados disponíveis em **treinedModels** e as sugestões de m
 #### classifierPRR.py
 SINTAXE
 
-classifierPRR.py --input-folder <folder path with images for classification> --measure-engine <zip, gzip, bzip2, LZWHuffman or entropy> --classes-parameters <tuple of classes and parameters used for classification between "..."> --training-file <training data file> --quantization-colors <number of colors> [--number-processes <number of parallel processes> --id-experiment <identification of experiments> archive-results verbose-mode report-mode]
+classifierPRR.py --input-folder *<folder path with images for classification>* --measure-engine *<zip, gzip, bzip2, LZWHuffman or entropy>* --classes-parameters *<tuple of classes and parameters used for classification between "...">* --training-file *<training data file>* --quantization-colors *<number of colors>* [--number-processes *<number of parallel processes>* --id-experiment *<identification of experiments>* archive-results verbose-mode report-mode]
   
 PARÂMETROS
 - 
@@ -52,7 +52,7 @@ EXEMPLO
 #### trainingPrototyping.py
 SINTAXE
 
-trainingPrototyping.py --input-folder <folder path with images for training> --quantization-colors <number of colors> --training-convergence <convergence value> [--vectors-sizes <vectors sizes> --codebooks-sizes <number of symbols> --classes-parameters <classes and your specific parameters in a list of tuples "(('classname', (vector size, codebook size)), ('classname', (vector size, codebook size)), ..., ('classname', (vector size, codebook size)))"> --number-processes <number of parallel processes>]
+trainingPrototyping.py --input-folder *<folder path with images for training>* --quantization-colors *<number of colors>* --training-convergence *<convergence value>* [--vectors-sizes *<vectors sizes>* --codebooks-sizes *<number of symbols>* --classes-parameters *<classes and your specific parameters in a list of tuples "(('classname', (vector size, codebook size)), ('classname', (vector size, codebook size)), ..., ('classname', (vector size, codebook size)))">* --number-processes *<number of parallel processes>*]
 
 PARÂMETROS
 
@@ -62,7 +62,7 @@ EXEMPLO
 #### trainingQuantization.py
 SINTAXE
 
-trainingQuantization.py --input-folder <input folder with images for quantization> --quantization-colors <number of colors> --training-file <training data file> [--number-processes <number of parallel processes>]
+trainingQuantization.py --input-folder *<input folder with images for quantization>* --quantization-colors *<number of colors>* --training-file *<training data file>* [--number-processes *<number of parallel processes>*]
 
 PARÂMETROS
 
@@ -72,7 +72,7 @@ EXEMPLO
 #### trainingMeasurement.py
 SINTAXE
 
-trainingMeasurement.py --input-data <input with quantizations data file> [--training-file <training data file>] --measure-engines <'zip gzip bzip2 LZWHuffman entropy'> [--number-processes <number of parallel processes>]
+trainingMeasurement.py --input-data *<input with quantizations data file>* [--training-file *<training data file>*] --measure-engines *<'zip gzip bzip2 LZWHuffman entropy'>* [--number-processes *<number of parallel processes>*]
 
 PARÂMETROS
 
@@ -82,7 +82,7 @@ EXEMPLO
 #### trainingValidation.py
 SINTAXE
 
-trainingValidation.py --input-data <input measures data file> --reference-rate <minimum accuracy desired> --rate-step <step of decreasing of the reference rate for scrap round> [--selected-measures <'zip gzip bzip2 LZWHuffman entropy'> --max-memory <maximum amount of memory to be used> --number-processes <number of parallel processes>]
+trainingValidation.py --input-data *<input measures data file>* --reference-rate *<minimum accuracy desired>* --rate-step *<step of decreasing of the reference rate for scrap round>* [--selected-measures *<'zip gzip bzip2 LZWHuffman entropy'>* --max-memory *<maximum amount of memory to be used>* --number-processes *<number of parallel processes>*]
 
 PARÂMETROS
 
@@ -92,7 +92,7 @@ EXEMPLO
 #### trainingReportValidation.py
 
 SINTAXE
-trainingReportValidation.py --input-data <file with best scenarios>
+trainingReportValidation.py --input-data *<file with best scenarios>*
 
 PARÂMETROS
 
