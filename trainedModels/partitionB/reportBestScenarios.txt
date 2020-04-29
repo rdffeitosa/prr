@@ -1,0 +1,451 @@
+ENVIRONMENT
+Ubuntu 16.04 xenial
+AMD Ryzen 7 1800X Eight-Core Processor
+32939852 kB
+
+PARAMETERS
+--input-data = ../trainedModels/partitionB/compressionMeasurements.pckl.bz2
+
+OUTPUT
+
+############################## LZWHuffman ##############################
+##### 2 classes #####
+Maximum accuracy: 1.0
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (40):
+[['sunsets', 'trees'], ['mountains', 'trees'], ['motorcycles', 'trees'], ['motorcycles', 'sunsets'], ['motorcycles', 'mountains'], ['moto-racings', 'motorcycles'], ['moto-racings', 'trees'], ['flowers', 'motorcycles'], ['flowers', 'moto-racings'], ['flowers', 'sunsets'], ['fireworks', 'trees'], ['fireworks', 'mountains'], ['fireworks', 'motorcycles'], ['fireworks', 'moto-racings'], ['fireworks', 'flowers'], ['fireworks', 'sunsets'], ['fields', 'trees'], ['fields', 'motorcycles'], ['fields', 'flowers'], ['fields', 'fireworks'], ['cars', 'motorcycles'], ['cars', 'fireworks'], ['cars', 'fields'], ['cars', 'trees'], ['buildings', 'motorcycles'], ['buildings', 'fireworks'], ['buildings', 'mountains'], ['buildings', 'fields'], ['buildings', 'sunsets'], ['beaches', 'trees'], ['beaches', 'motorcycles'], ['beaches', 'fireworks'], ['beaches', 'buildings'], ['beaches', 'fields'], ['aircrafts', 'trees'], ['aircrafts', 'motorcycles'], ['aircrafts', 'fireworks'], ['aircrafts', 'buildings'], ['aircrafts', 'fields'], ['aircrafts', 'sunsets']]
+Total best scenarios: 11760
+
+##### 3 classes #####
+Maximum accuracy: 1.0
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (47):
+[['motorcycles', 'mountains', 'trees'], ['motorcycles', 'sunsets', 'trees'], ['moto-racings', 'motorcycles', 'trees'], ['flowers', 'moto-racings', 'motorcycles'], ['flowers', 'motorcycles', 'sunsets'], ['fireworks', 'mountains', 'trees'], ['fireworks', 'motorcycles', 'trees'], ['fireworks', 'motorcycles', 'mountains'], ['fireworks', 'moto-racings', 'motorcycles'], ['fireworks', 'moto-racings', 'trees'], ['fireworks', 'flowers', 'motorcycles'], ['fireworks', 'flowers', 'moto-racings'], ['fireworks', 'sunsets', 'trees'], ['fireworks', 'motorcycles', 'sunsets'], ['fireworks', 'flowers', 'sunsets'], ['fields', 'motorcycles', 'trees'], ['fields', 'flowers', 'motorcycles'], ['fields', 'fireworks', 'trees'], ['fields', 'fireworks', 'motorcycles'], ['fields', 'fireworks', 'flowers'], ['cars', 'fireworks', 'motorcycles'], ['cars', 'fields', 'fireworks'], ['cars', 'motorcycles', 'trees'], ['cars', 'fireworks', 'trees'], ['cars', 'fields', 'trees'], ['cars', 'fields', 'motorcycles'], ['buildings', 'fireworks', 'motorcycles'], ['buildings', 'motorcycles', 'mountains'], ['buildings', 'fireworks', 'mountains'], ['buildings', 'fields', 'fireworks'], ['buildings', 'motorcycles', 'sunsets'], ['buildings', 'fireworks', 'sunsets'], ['beaches', 'motorcycles', 'trees'], ['beaches', 'fireworks', 'trees'], ['beaches', 'fireworks', 'motorcycles'], ['beaches', 'buildings', 'fireworks'], ['beaches', 'buildings', 'motorcycles'], ['beaches', 'fields', 'motorcycles'], ['beaches', 'fields', 'fireworks'], ['aircrafts', 'motorcycles', 'trees'], ['aircrafts', 'fireworks', 'trees'], ['aircrafts', 'fireworks', 'motorcycles'], ['aircrafts', 'buildings', 'fireworks'], ['aircrafts', 'fields', 'motorcycles'], ['aircrafts', 'fields', 'fireworks'], ['aircrafts', 'motorcycles', 'sunsets'], ['aircrafts', 'fireworks', 'sunsets']]
+Total best scenarios: 174846
+
+##### 4 classes #####
+Maximum accuracy: 1.0
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (17):
+[['fireworks', 'motorcycles', 'mountains', 'trees'], ['fireworks', 'moto-racings', 'motorcycles', 'trees'], ['fireworks', 'flowers', 'moto-racings', 'motorcycles'], ['fireworks', 'motorcycles', 'sunsets', 'trees'], ['fireworks', 'flowers', 'motorcycles', 'sunsets'], ['fields', 'fireworks', 'motorcycles', 'trees'], ['fields', 'fireworks', 'flowers', 'motorcycles'], ['cars', 'fireworks', 'motorcycles', 'trees'], ['cars', 'fields', 'motorcycles', 'trees'], ['buildings', 'fireworks', 'motorcycles', 'mountains'], ['buildings', 'fireworks', 'motorcycles', 'sunsets'], ['beaches', 'fireworks', 'motorcycles', 'trees'], ['beaches', 'buildings', 'fireworks', 'motorcycles'], ['beaches', 'fields', 'fireworks', 'motorcycles'], ['aircrafts', 'fireworks', 'motorcycles', 'trees'], ['aircrafts', 'fields', 'fireworks', 'motorcycles'], ['aircrafts', 'fireworks', 'motorcycles', 'sunsets']]
+Total best scenarios: 1219345
+
+##### 5 classes #####
+Maximum accuracy: 0.992
+Possible classes (10):
+['aircrafts', 'beaches', 'cars', 'fields', 'fireworks', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (7):
+[['aircrafts', 'fireworks', 'motorcycles', 'sunsets', 'trees'], ['aircrafts', 'fireworks', 'moto-racings', 'motorcycles', 'trees'], ['beaches', 'fields', 'fireworks', 'motorcycles', 'trees'], ['beaches', 'fireworks', 'motorcycles', 'sunsets', 'trees'], ['beaches', 'fireworks', 'moto-racings', 'motorcycles', 'trees'], ['cars', 'fields', 'fireworks', 'motorcycles', 'trees'], ['cars', 'fireworks', 'motorcycles', 'mountains', 'trees']]
+Total best scenarios: 1856827
+
+##### 6 classes #####
+Maximum accuracy: 0.973333333333
+Possible classes (7):
+['buildings', 'fields', 'fireworks', 'flowers', 'motorcycles', 'mountains', 'trees']
+Possible decision groups (2):
+[['buildings', 'fields', 'fireworks', 'flowers', 'motorcycles', 'trees'], ['buildings', 'fireworks', 'flowers', 'motorcycles', 'mountains', 'trees']]
+Total best scenarios: 891199
+
+##### 7 classes #####
+Maximum accuracy: 0.948571428571
+Possible classes (7):
+['beaches', 'buildings', 'fields', 'fireworks', 'flowers', 'motorcycles', 'trees']
+Possible decision groups (1):
+[['beaches', 'buildings', 'fields', 'fireworks', 'flowers', 'motorcycles', 'trees']]
+Total best scenarios: 72663
+
+##### 8 classes #####
+Maximum accuracy: 0.92
+Possible classes (8):
+['aircrafts', 'beaches', 'buildings', 'fields', 'fireworks', 'flowers', 'motorcycles', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'beaches', 'buildings', 'fields', 'fireworks', 'flowers', 'motorcycles', 'trees']]
+Total best scenarios: 1730
+Total max scenarios: 4
+Max scenarios:
+[(('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (20, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('motorcycles', (30, 64)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (20, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('motorcycles', (25, 64)), ('trees', (20, 512))), (('aircrafts', (25, 256)), ('beaches', (30, 512)), ('buildings', (20, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('motorcycles', (30, 64)), ('trees', (20, 512))), (('aircrafts', (25, 256)), ('beaches', (30, 512)), ('buildings', (20, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('motorcycles', (25, 64)), ('trees', (20, 512)))]
+
+##### 9 classes* #####
+Maximum accuracy: 0.888888888889
+Possible classes (11):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'sunsets', 'trees']
+Possible decision groups (4):
+[['aircrafts', 'beaches', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'trees'], ['aircrafts', 'beaches', 'buildings', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'trees'], ['aircrafts', 'beaches', 'buildings', 'fields', 'fireworks', 'flowers', 'motorcycles', 'sunsets', 'trees'], ['aircrafts', 'beaches', 'buildings', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'sunsets', 'trees']]
+Total best scenarios: 19167
+Total max scenarios: 20
+Max scenarios:
+[(('aircrafts', (30, 256)), ('beaches', (30, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 128)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (20, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (20, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (20, 256)), ('fields', (30, 512)), ('fireworks', (30, 256)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (20, 256)), ('fields', (30, 512)), ('fireworks', (30, 256)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (20, 256)), ('fields', (30, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('motorcycles', (30, 64)), ('sunsets', (30, 512)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (20, 256)), ('fields', (30, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('motorcycles', (25, 64)), ('sunsets', (30, 512)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 128)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 128)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (30, 256)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (30, 256)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 128)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (30, 256)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('trees', (20, 512))), (('aircrafts', (25, 256)), ('beaches', (30, 512)), ('buildings', (20, 256)), ('fields', (30, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('motorcycles', (30, 64)), ('sunsets', (30, 512)), ('trees', (20, 512))), (('aircrafts', (25, 256)), ('beaches', (30, 512)), ('buildings', (20, 256)), ('fields', (30, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('motorcycles', (25, 64)), ('sunsets', (30, 512)), ('trees', (20, 512)))]
+
+##### 10 classes* #####
+Maximum accuracy: 0.864
+Possible classes (10):
+['aircrafts', 'beaches', 'buildings', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'sunsets', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'beaches', 'buildings', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'sunsets', 'trees']]
+Total best scenarios: 35382
+Total max scenarios: 6
+Max scenarios:
+[(('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('sunsets', (30, 512)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 128)), ('sunsets', (30, 512)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 128)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('sunsets', (30, 512)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('sunsets', (30, 512)), ('trees', (5, 256)))]
+
+##### 11 classes* #####
+Maximum accuracy: 0.829090909091
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (2):
+[['aircrafts', 'beaches', 'buildings', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees'], ['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'sunsets', 'trees']]
+Total best scenarios: 5487
+Total max scenarios: 27
+Max scenarios:
+[(('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 128)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 128)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (20, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (15, 512)), ('fields', (30, 512)), ('fireworks', (25, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 128)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 128)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (15, 256)), ('motorcycles', (30, 64)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (15, 256)), ('motorcycles', (30, 64)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (15, 256)), ('motorcycles', (25, 128)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (15, 256)), ('motorcycles', (25, 128)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (15, 256)), ('motorcycles', (25, 64)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (15, 256)), ('motorcycles', (25, 64)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 128)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (15, 256)), ('motorcycles', (30, 64)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 128)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (15, 256)), ('motorcycles', (25, 128)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 128)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (15, 256)), ('motorcycles', (25, 64)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 64)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 64)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 64)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 128)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 64)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 128)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 64)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 64)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('sunsets', (30, 512)), ('trees', (5, 256)))]
+
+##### 12 classes* #####
+Maximum accuracy: 0.793333333333
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']]
+Total best scenarios: 6039
+Total max scenarios: 12
+Max scenarios:
+[(('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 128)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 128)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 512)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 64)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 64)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (30, 64)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 64)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 128)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 64)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 128)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 64)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (5, 512))), (('aircrafts', (30, 256)), ('beaches', (30, 512)), ('buildings', (10, 64)), ('cars', (25, 256)), ('fields', (30, 512)), ('fireworks', (30, 512)), ('flowers', (30, 512)), ('moto-racings', (20, 256)), ('motorcycles', (25, 64)), ('mountains', (30, 256)), ('sunsets', (30, 512)), ('trees', (5, 256)))]
+
+
+############################## bzip2 ##############################
+##### 2 classes #####
+Maximum accuracy: 1.0
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (58):
+[['sunsets', 'trees'], ['mountains', 'trees'], ['mountains', 'sunsets'], ['motorcycles', 'trees'], ['motorcycles', 'sunsets'], ['motorcycles', 'mountains'], ['moto-racings', 'mountains'], ['moto-racings', 'trees'], ['moto-racings', 'sunsets'], ['moto-racings', 'motorcycles'], ['flowers', 'trees'], ['flowers', 'motorcycles'], ['flowers', 'sunsets'], ['fireworks', 'trees'], ['fireworks', 'motorcycles'], ['fireworks', 'moto-racings'], ['fireworks', 'mountains'], ['fireworks', 'flowers'], ['fireworks', 'sunsets'], ['fields', 'trees'], ['fields', 'motorcycles'], ['fields', 'fireworks'], ['fields', 'mountains'], ['fields', 'moto-racings'], ['fields', 'flowers'], ['cars', 'trees'], ['cars', 'motorcycles'], ['cars', 'fireworks'], ['cars', 'fields'], ['cars', 'mountains'], ['cars', 'sunsets'], ['cars', 'flowers'], ['buildings', 'fireworks'], ['buildings', 'fields'], ['buildings', 'mountains'], ['buildings', 'motorcycles'], ['buildings', 'cars'], ['buildings', 'flowers'], ['buildings', 'sunsets'], ['buildings', 'moto-racings'], ['beaches', 'trees'], ['beaches', 'motorcycles'], ['beaches', 'flowers'], ['beaches', 'fireworks'], ['beaches', 'moto-racings'], ['beaches', 'cars'], ['beaches', 'buildings'], ['beaches', 'mountains'], ['aircrafts', 'trees'], ['aircrafts', 'mountains'], ['aircrafts', 'motorcycles'], ['aircrafts', 'fireworks'], ['aircrafts', 'fields'], ['aircrafts', 'cars'], ['aircrafts', 'buildings'], ['aircrafts', 'sunsets'], ['aircrafts', 'moto-racings'], ['aircrafts', 'flowers']]
+Total best scenarios: 5400
+
+##### 3 classes #####
+Maximum accuracy: 1.0
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (89):
+[['motorcycles', 'sunsets', 'trees'], ['motorcycles', 'mountains', 'sunsets'], ['motorcycles', 'mountains', 'trees'], ['moto-racings', 'sunsets', 'trees'], ['moto-racings', 'motorcycles', 'sunsets'], ['flowers', 'motorcycles', 'trees'], ['flowers', 'motorcycles', 'sunsets'], ['fireworks', 'mountains', 'trees'], ['fireworks', 'moto-racings', 'mountains'], ['fireworks', 'flowers', 'trees'], ['fireworks', 'flowers', 'motorcycles'], ['fireworks', 'motorcycles', 'trees'], ['fireworks', 'motorcycles', 'mountains'], ['fireworks', 'moto-racings', 'trees'], ['fireworks', 'motorcycles', 'sunsets'], ['fireworks', 'moto-racings', 'sunsets'], ['fireworks', 'sunsets', 'trees'], ['fireworks', 'mountains', 'sunsets'], ['fireworks', 'moto-racings', 'motorcycles'], ['fields', 'fireworks', 'trees'], ['fields', 'fireworks', 'motorcycles'], ['fields', 'mountains', 'trees'], ['fields', 'fireworks', 'mountains'], ['fields', 'fireworks', 'moto-racings'], ['fields', 'moto-racings', 'motorcycles'], ['fields', 'motorcycles', 'trees'], ['fields', 'moto-racings', 'trees'], ['fields', 'flowers', 'motorcycles'], ['fields', 'fireworks', 'flowers'], ['cars', 'fireworks', 'trees'], ['cars', 'fireworks', 'motorcycles'], ['cars', 'fields', 'trees'], ['cars', 'fields', 'motorcycles'], ['cars', 'fields', 'fireworks'], ['cars', 'mountains', 'trees'], ['cars', 'fireworks', 'mountains'], ['cars', 'motorcycles', 'trees'], ['buildings', 'fields', 'fireworks'], ['buildings', 'fireworks', 'mountains'], ['buildings', 'cars', 'mountains'], ['buildings', 'cars', 'fireworks'], ['buildings', 'cars', 'fields'], ['buildings', 'flowers', 'motorcycles'], ['buildings', 'fireworks', 'motorcycles'], ['buildings', 'fireworks', 'flowers'], ['buildings', 'fields', 'motorcycles'], ['buildings', 'motorcycles', 'sunsets'], ['buildings', 'moto-racings', 'sunsets'], ['buildings', 'fireworks', 'moto-racings'], ['beaches', 'flowers', 'motorcycles'], ['beaches', 'fireworks', 'trees'], ['beaches', 'fireworks', 'motorcycles'], ['beaches', 'fireworks', 'flowers'], ['beaches', 'motorcycles', 'trees'], ['beaches', 'fireworks', 'moto-racings'], ['beaches', 'cars', 'trees'], ['beaches', 'cars', 'motorcycles'], ['beaches', 'cars', 'fireworks'], ['beaches', 'buildings', 'fireworks'], ['beaches', 'moto-racings', 'motorcycles'], ['beaches', 'buildings', 'motorcycles'], ['beaches', 'mountains', 'trees'], ['beaches', 'fireworks', 'mountains'], ['beaches', 'moto-racings', 'trees'], ['aircrafts', 'mountains', 'trees'], ['aircrafts', 'motorcycles', 'trees'], ['aircrafts', 'fireworks', 'motorcycles'], ['aircrafts', 'fireworks', 'trees'], ['aircrafts', 'fireworks', 'mountains'], ['aircrafts', 'fields', 'trees'], ['aircrafts', 'fields', 'motorcycles'], ['aircrafts', 'fields', 'fireworks'], ['aircrafts', 'cars', 'motorcycles'], ['aircrafts', 'cars', 'fireworks'], ['aircrafts', 'cars', 'trees'], ['aircrafts', 'cars', 'mountains'], ['aircrafts', 'cars', 'fields'], ['aircrafts', 'buildings', 'mountains'], ['aircrafts', 'buildings', 'fireworks'], ['aircrafts', 'buildings', 'fields'], ['aircrafts', 'buildings', 'cars'], ['aircrafts', 'motorcycles', 'sunsets'], ['aircrafts', 'moto-racings', 'sunsets'], ['aircrafts', 'fireworks', 'sunsets'], ['aircrafts', 'fireworks', 'moto-racings'], ['aircrafts', 'fields', 'moto-racings'], ['aircrafts', 'buildings', 'sunsets'], ['aircrafts', 'cars', 'sunsets'], ['aircrafts', 'sunsets', 'trees']]
+Total best scenarios: 34496
+
+##### 4 classes #####
+Maximum accuracy: 1.0
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (45):
+[['fireworks', 'motorcycles', 'mountains', 'trees'], ['fireworks', 'flowers', 'motorcycles', 'trees'], ['fireworks', 'motorcycles', 'sunsets', 'trees'], ['fireworks', 'motorcycles', 'mountains', 'sunsets'], ['fireworks', 'moto-racings', 'motorcycles', 'sunsets'], ['fields', 'fireworks', 'mountains', 'trees'], ['fields', 'fireworks', 'moto-racings', 'motorcycles'], ['fields', 'fireworks', 'flowers', 'motorcycles'], ['fields', 'fireworks', 'motorcycles', 'trees'], ['fields', 'fireworks', 'moto-racings', 'trees'], ['cars', 'fields', 'fireworks', 'trees'], ['cars', 'fields', 'fireworks', 'motorcycles'], ['cars', 'fireworks', 'mountains', 'trees'], ['buildings', 'cars', 'fireworks', 'mountains'], ['buildings', 'cars', 'fields', 'fireworks'], ['buildings', 'fireworks', 'flowers', 'motorcycles'], ['buildings', 'fields', 'fireworks', 'motorcycles'], ['beaches', 'fireworks', 'flowers', 'motorcycles'], ['beaches', 'fireworks', 'motorcycles', 'trees'], ['beaches', 'cars', 'fireworks', 'trees'], ['beaches', 'cars', 'fireworks', 'motorcycles'], ['beaches', 'fireworks', 'moto-racings', 'motorcycles'], ['beaches', 'buildings', 'fireworks', 'motorcycles'], ['beaches', 'fireworks', 'mountains', 'trees'], ['beaches', 'fireworks', 'moto-racings', 'trees'], ['aircrafts', 'fireworks', 'mountains', 'trees'], ['aircrafts', 'fireworks', 'motorcycles', 'trees'], ['aircrafts', 'fields', 'motorcycles', 'trees'], ['aircrafts', 'fields', 'fireworks', 'trees'], ['aircrafts', 'fields', 'fireworks', 'motorcycles'], ['aircrafts', 'cars', 'fireworks', 'motorcycles'], ['aircrafts', 'cars', 'mountains', 'trees'], ['aircrafts', 'cars', 'fireworks', 'mountains'], ['aircrafts', 'cars', 'fireworks', 'trees'], ['aircrafts', 'cars', 'fields', 'trees'], ['aircrafts', 'cars', 'fields', 'fireworks'], ['aircrafts', 'buildings', 'fireworks', 'mountains'], ['aircrafts', 'buildings', 'fields', 'fireworks'], ['aircrafts', 'buildings', 'cars', 'mountains'], ['aircrafts', 'buildings', 'cars', 'fireworks'], ['aircrafts', 'buildings', 'cars', 'fields'], ['aircrafts', 'fireworks', 'motorcycles', 'sunsets'], ['aircrafts', 'fireworks', 'moto-racings', 'sunsets'], ['aircrafts', 'fields', 'fireworks', 'moto-racings'], ['aircrafts', 'motorcycles', 'sunsets', 'trees']]
+Total best scenarios: 119584
+
+##### 5 classes #####
+Maximum accuracy: 1.0
+Possible classes (8):
+['aircrafts', 'buildings', 'cars', 'fields', 'fireworks', 'motorcycles', 'mountains', 'trees']
+Possible decision groups (5):
+[['aircrafts', 'fields', 'fireworks', 'motorcycles', 'trees'], ['aircrafts', 'cars', 'fireworks', 'mountains', 'trees'], ['aircrafts', 'cars', 'fields', 'fireworks', 'trees'], ['aircrafts', 'buildings', 'cars', 'fireworks', 'mountains'], ['aircrafts', 'buildings', 'cars', 'fields', 'fireworks']]
+Total best scenarios: 156547
+
+##### 6 classes #####
+Maximum accuracy: 0.993333333333
+Possible classes (8):
+['aircrafts', 'buildings', 'cars', 'fields', 'fireworks', 'motorcycles', 'mountains', 'trees']
+Possible decision groups (6):
+[['aircrafts', 'cars', 'fireworks', 'motorcycles', 'mountains', 'trees'], ['aircrafts', 'cars', 'fields', 'fireworks', 'mountains', 'trees'], ['aircrafts', 'cars', 'fields', 'fireworks', 'motorcycles', 'trees'], ['aircrafts', 'buildings', 'cars', 'fireworks', 'mountains', 'trees'], ['aircrafts', 'buildings', 'cars', 'fields', 'fireworks', 'trees'], ['aircrafts', 'buildings', 'cars', 'fields', 'fireworks', 'mountains']]
+Total best scenarios: 148901
+
+##### 7 classes #####
+Maximum accuracy: 0.988571428571
+Possible classes (8):
+['aircrafts', 'buildings', 'cars', 'fields', 'fireworks', 'motorcycles', 'mountains', 'trees']
+Possible decision groups (2):
+[['aircrafts', 'cars', 'fields', 'fireworks', 'motorcycles', 'mountains', 'trees'], ['aircrafts', 'buildings', 'cars', 'fields', 'fireworks', 'mountains', 'trees']]
+Total best scenarios: 60702
+
+##### 8 classes #####
+Maximum accuracy: 0.98
+Possible classes (8):
+['aircrafts', 'buildings', 'cars', 'fields', 'fireworks', 'motorcycles', 'mountains', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'buildings', 'cars', 'fields', 'fireworks', 'motorcycles', 'mountains', 'trees']]
+Total best scenarios: 23119
+
+##### 9 classes #####
+Maximum accuracy: 0.955555555556
+Possible classes (11):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'trees']
+Possible decision groups (4):
+[['aircrafts', 'buildings', 'cars', 'fields', 'fireworks', 'moto-racings', 'motorcycles', 'mountains', 'trees'], ['aircrafts', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'motorcycles', 'mountains', 'trees'], ['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'motorcycles', 'mountains', 'trees'], ['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'motorcycles', 'trees']]
+Total best scenarios: 4193
+
+##### 10 classes #####
+Maximum accuracy: 0.944
+Possible classes (10):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'motorcycles', 'mountains', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'motorcycles', 'mountains', 'trees']]
+Total best scenarios: 669
+
+##### 11 classes #####
+Maximum accuracy: 0.92
+Possible classes (11):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'trees']]
+Total best scenarios: 29
+Total max scenarios: 1
+Max scenarios:
+[(('aircrafts', (30, 512)), ('beaches', (20, 512)), ('buildings', (20, 512)), ('cars', (25, 512)), ('fields', (15, 512)), ('fireworks', (20, 256)), ('flowers', (25, 512)), ('moto-racings', (25, 512)), ('motorcycles', (25, 512)), ('mountains', (20, 512)), ('trees', (15, 512)))]
+
+##### 12 classes* #####
+Maximum accuracy: 0.893333333333
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']]
+Total best scenarios: 29
+Total max scenarios: 1
+Max scenarios:
+[(('aircrafts', (30, 512)), ('beaches', (20, 512)), ('buildings', (20, 512)), ('cars', (25, 512)), ('fields', (15, 512)), ('fireworks', (20, 512)), ('flowers', (25, 512)), ('moto-racings', (25, 512)), ('motorcycles', (25, 512)), ('mountains', (20, 512)), ('sunsets', (30, 512)), ('trees', (15, 512)))]
+
+
+############################## gzip ##############################
+##### 2 classes #####
+Maximum accuracy: 1.0
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (53):
+[['sunsets', 'trees'], ['mountains', 'trees'], ['mountains', 'sunsets'], ['motorcycles', 'trees'], ['motorcycles', 'sunsets'], ['motorcycles', 'mountains'], ['moto-racings', 'sunsets'], ['moto-racings', 'motorcycles'], ['moto-racings', 'trees'], ['flowers', 'motorcycles'], ['flowers', 'sunsets'], ['flowers', 'trees'], ['flowers', 'mountains'], ['fireworks', 'trees'], ['fireworks', 'mountains'], ['fireworks', 'motorcycles'], ['fireworks', 'moto-racings'], ['fireworks', 'flowers'], ['fireworks', 'sunsets'], ['fields', 'trees'], ['fields', 'fireworks'], ['fields', 'mountains'], ['fields', 'motorcycles'], ['fields', 'moto-racings'], ['cars', 'trees'], ['cars', 'fireworks'], ['cars', 'fields'], ['cars', 'mountains'], ['cars', 'sunsets'], ['cars', 'motorcycles'], ['buildings', 'fireworks'], ['buildings', 'fields'], ['buildings', 'mountains'], ['buildings', 'motorcycles'], ['buildings', 'flowers'], ['buildings', 'sunsets'], ['buildings', 'moto-racings'], ['beaches', 'trees'], ['beaches', 'flowers'], ['beaches', 'fireworks'], ['beaches', 'motorcycles'], ['beaches', 'buildings'], ['beaches', 'cars'], ['beaches', 'moto-racings'], ['aircrafts', 'trees'], ['aircrafts', 'sunsets'], ['aircrafts', 'motorcycles'], ['aircrafts', 'moto-racings'], ['aircrafts', 'fireworks'], ['aircrafts', 'fields'], ['aircrafts', 'cars'], ['aircrafts', 'buildings'], ['aircrafts', 'flowers']]
+Total best scenarios: 5349
+
+##### 3 classes #####
+Maximum accuracy: 1.0
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (69):
+[['mountains', 'sunsets', 'trees'], ['motorcycles', 'sunsets', 'trees'], ['motorcycles', 'mountains', 'sunsets'], ['moto-racings', 'sunsets', 'trees'], ['moto-racings', 'motorcycles', 'sunsets'], ['flowers', 'motorcycles', 'sunsets'], ['flowers', 'motorcycles', 'trees'], ['flowers', 'motorcycles', 'mountains'], ['fireworks', 'mountains', 'trees'], ['fireworks', 'flowers', 'motorcycles'], ['fireworks', 'motorcycles', 'trees'], ['fireworks', 'sunsets', 'trees'], ['fireworks', 'motorcycles', 'sunsets'], ['fireworks', 'motorcycles', 'mountains'], ['fireworks', 'flowers', 'mountains'], ['fields', 'fireworks', 'trees'], ['fields', 'mountains', 'trees'], ['fields', 'fireworks', 'mountains'], ['fields', 'fireworks', 'motorcycles'], ['fields', 'fireworks', 'moto-racings'], ['fields', 'motorcycles', 'trees'], ['fields', 'moto-racings', 'motorcycles'], ['cars', 'fireworks', 'trees'], ['cars', 'fields', 'trees'], ['cars', 'fields', 'fireworks'], ['cars', 'fireworks', 'mountains'], ['cars', 'fields', 'motorcycles'], ['cars', 'fireworks', 'motorcycles'], ['buildings', 'fields', 'fireworks'], ['buildings', 'fireworks', 'mountains'], ['buildings', 'fireworks', 'motorcycles'], ['buildings', 'flowers', 'motorcycles'], ['buildings', 'mountains', 'sunsets'], ['buildings', 'motorcycles', 'sunsets'], ['buildings', 'motorcycles', 'mountains'], ['buildings', 'fields', 'motorcycles'], ['buildings', 'moto-racings', 'sunsets'], ['buildings', 'moto-racings', 'motorcycles'], ['beaches', 'fireworks', 'trees'], ['beaches', 'fireworks', 'flowers'], ['beaches', 'motorcycles', 'trees'], ['beaches', 'fireworks', 'motorcycles'], ['beaches', 'buildings', 'motorcycles'], ['beaches', 'buildings', 'fireworks'], ['beaches', 'cars', 'trees'], ['beaches', 'cars', 'fireworks'], ['beaches', 'fireworks', 'moto-racings'], ['aircrafts', 'sunsets', 'trees'], ['aircrafts', 'motorcycles', 'trees'], ['aircrafts', 'motorcycles', 'sunsets'], ['aircrafts', 'moto-racings', 'sunsets'], ['aircrafts', 'fireworks', 'trees'], ['aircrafts', 'fireworks', 'motorcycles'], ['aircrafts', 'fireworks', 'moto-racings'], ['aircrafts', 'fields', 'trees'], ['aircrafts', 'fields', 'motorcycles'], ['aircrafts', 'fields', 'moto-racings'], ['aircrafts', 'fields', 'fireworks'], ['aircrafts', 'cars', 'trees'], ['aircrafts', 'cars', 'fireworks'], ['aircrafts', 'buildings', 'fireworks'], ['aircrafts', 'buildings', 'fields'], ['aircrafts', 'fireworks', 'sunsets'], ['aircrafts', 'cars', 'sunsets'], ['aircrafts', 'cars', 'fields'], ['aircrafts', 'flowers', 'sunsets'], ['aircrafts', 'flowers', 'motorcycles'], ['aircrafts', 'fireworks', 'flowers'], ['aircrafts', 'buildings', 'motorcycles']]
+Total best scenarios: 33189
+
+##### 4 classes #####
+Maximum accuracy: 1.0
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (21):
+[['fireworks', 'motorcycles', 'sunsets', 'trees'], ['fireworks', 'flowers', 'motorcycles', 'mountains'], ['fields', 'fireworks', 'mountains', 'trees'], ['fields', 'fireworks', 'motorcycles', 'trees'], ['cars', 'fields', 'fireworks', 'trees'], ['buildings', 'moto-racings', 'motorcycles', 'sunsets'], ['beaches', 'fireworks', 'motorcycles', 'trees'], ['beaches', 'buildings', 'fireworks', 'motorcycles'], ['beaches', 'cars', 'fireworks', 'trees'], ['aircrafts', 'fireworks', 'motorcycles', 'trees'], ['aircrafts', 'fields', 'fireworks', 'motorcycles'], ['aircrafts', 'fields', 'fireworks', 'moto-racings'], ['aircrafts', 'fields', 'fireworks', 'trees'], ['aircrafts', 'cars', 'fireworks', 'trees'], ['aircrafts', 'buildings', 'fields', 'fireworks'], ['aircrafts', 'motorcycles', 'sunsets', 'trees'], ['aircrafts', 'fireworks', 'sunsets', 'trees'], ['aircrafts', 'fireworks', 'motorcycles', 'sunsets'], ['aircrafts', 'cars', 'fields', 'fireworks'], ['aircrafts', 'flowers', 'motorcycles', 'sunsets'], ['aircrafts', 'fireworks', 'flowers', 'motorcycles']]
+Total best scenarios: 103373
+
+##### 5 classes #####
+Maximum accuracy: 1.0
+Possible classes (5):
+['aircrafts', 'fireworks', 'motorcycles', 'sunsets', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'fireworks', 'motorcycles', 'sunsets', 'trees']]
+Total best scenarios: 104131
+
+##### 6 classes #####
+Maximum accuracy: 0.973333333333
+Possible classes (10):
+['aircrafts', 'beaches', 'cars', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (6):
+[['aircrafts', 'beaches', 'fireworks', 'moto-racings', 'sunsets', 'trees'], ['aircrafts', 'fireworks', 'motorcycles', 'mountains', 'sunsets', 'trees'], ['aircrafts', 'fireworks', 'flowers', 'motorcycles', 'sunsets', 'trees'], ['aircrafts', 'beaches', 'fireworks', 'motorcycles', 'sunsets', 'trees'], ['aircrafts', 'beaches', 'cars', 'fireworks', 'motorcycles', 'trees'], ['aircrafts', 'beaches', 'fireworks', 'flowers', 'motorcycles', 'trees']]
+Total best scenarios: 67311
+
+##### 7 classes #####
+Maximum accuracy: 0.96
+Possible classes (8):
+['aircrafts', 'beaches', 'fireworks', 'flowers', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (2):
+[['aircrafts', 'fireworks', 'flowers', 'motorcycles', 'mountains', 'sunsets', 'trees'], ['aircrafts', 'beaches', 'fireworks', 'flowers', 'motorcycles', 'sunsets', 'trees']]
+Total best scenarios: 13346
+
+##### 8 classes #####
+Maximum accuracy: 0.935
+Possible classes (8):
+['aircrafts', 'beaches', 'cars', 'fireworks', 'flowers', 'motorcycles', 'sunsets', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'beaches', 'cars', 'fireworks', 'flowers', 'motorcycles', 'sunsets', 'trees']]
+Total best scenarios: 1619
+
+##### 9 classes #####
+Maximum accuracy: 0.902222222222
+Possible classes (9):
+['aircrafts', 'beaches', 'buildings', 'fireworks', 'flowers', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'beaches', 'buildings', 'fireworks', 'flowers', 'motorcycles', 'mountains', 'sunsets', 'trees']]
+Total best scenarios: 1
+Total max scenarios: 1
+Max scenarios:
+[(('aircrafts', (25, 512)), ('beaches', (15, 512)), ('buildings', (20, 512)), ('fireworks', (20, 256)), ('flowers', (20, 512)), ('motorcycles', (30, 256)), ('mountains', (20, 512)), ('sunsets', (30, 256)), ('trees', (15, 512)))]
+
+
+############################## zip ##############################
+##### 2 classes #####
+Maximum accuracy: 1.0
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (53):
+[['sunsets', 'trees'], ['mountains', 'trees'], ['mountains', 'sunsets'], ['motorcycles', 'trees'], ['motorcycles', 'sunsets'], ['motorcycles', 'mountains'], ['moto-racings', 'sunsets'], ['moto-racings', 'motorcycles'], ['moto-racings', 'trees'], ['flowers', 'motorcycles'], ['flowers', 'sunsets'], ['flowers', 'trees'], ['flowers', 'mountains'], ['fireworks', 'trees'], ['fireworks', 'mountains'], ['fireworks', 'motorcycles'], ['fireworks', 'moto-racings'], ['fireworks', 'flowers'], ['fireworks', 'sunsets'], ['fields', 'trees'], ['fields', 'fireworks'], ['fields', 'mountains'], ['fields', 'motorcycles'], ['fields', 'moto-racings'], ['cars', 'trees'], ['cars', 'fireworks'], ['cars', 'fields'], ['cars', 'mountains'], ['cars', 'sunsets'], ['cars', 'motorcycles'], ['buildings', 'fireworks'], ['buildings', 'fields'], ['buildings', 'mountains'], ['buildings', 'motorcycles'], ['buildings', 'flowers'], ['buildings', 'sunsets'], ['buildings', 'moto-racings'], ['beaches', 'trees'], ['beaches', 'flowers'], ['beaches', 'fireworks'], ['beaches', 'motorcycles'], ['beaches', 'buildings'], ['beaches', 'cars'], ['beaches', 'moto-racings'], ['aircrafts', 'trees'], ['aircrafts', 'sunsets'], ['aircrafts', 'motorcycles'], ['aircrafts', 'moto-racings'], ['aircrafts', 'fireworks'], ['aircrafts', 'fields'], ['aircrafts', 'cars'], ['aircrafts', 'buildings'], ['aircrafts', 'flowers']]
+Total best scenarios: 5349
+
+##### 3 classes #####
+Maximum accuracy: 1.0
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (69):
+[['mountains', 'sunsets', 'trees'], ['motorcycles', 'sunsets', 'trees'], ['motorcycles', 'mountains', 'sunsets'], ['moto-racings', 'sunsets', 'trees'], ['moto-racings', 'motorcycles', 'sunsets'], ['flowers', 'motorcycles', 'sunsets'], ['flowers', 'motorcycles', 'trees'], ['flowers', 'motorcycles', 'mountains'], ['fireworks', 'mountains', 'trees'], ['fireworks', 'flowers', 'motorcycles'], ['fireworks', 'motorcycles', 'trees'], ['fireworks', 'sunsets', 'trees'], ['fireworks', 'motorcycles', 'sunsets'], ['fireworks', 'motorcycles', 'mountains'], ['fireworks', 'flowers', 'mountains'], ['fields', 'fireworks', 'trees'], ['fields', 'mountains', 'trees'], ['fields', 'fireworks', 'mountains'], ['fields', 'fireworks', 'motorcycles'], ['fields', 'fireworks', 'moto-racings'], ['fields', 'motorcycles', 'trees'], ['fields', 'moto-racings', 'motorcycles'], ['cars', 'fireworks', 'trees'], ['cars', 'fields', 'trees'], ['cars', 'fields', 'fireworks'], ['cars', 'fireworks', 'mountains'], ['cars', 'fields', 'motorcycles'], ['cars', 'fireworks', 'motorcycles'], ['buildings', 'fields', 'fireworks'], ['buildings', 'fireworks', 'mountains'], ['buildings', 'fireworks', 'motorcycles'], ['buildings', 'flowers', 'motorcycles'], ['buildings', 'mountains', 'sunsets'], ['buildings', 'motorcycles', 'sunsets'], ['buildings', 'motorcycles', 'mountains'], ['buildings', 'fields', 'motorcycles'], ['buildings', 'moto-racings', 'sunsets'], ['buildings', 'moto-racings', 'motorcycles'], ['beaches', 'fireworks', 'trees'], ['beaches', 'fireworks', 'flowers'], ['beaches', 'motorcycles', 'trees'], ['beaches', 'fireworks', 'motorcycles'], ['beaches', 'buildings', 'motorcycles'], ['beaches', 'buildings', 'fireworks'], ['beaches', 'cars', 'trees'], ['beaches', 'cars', 'fireworks'], ['beaches', 'fireworks', 'moto-racings'], ['aircrafts', 'sunsets', 'trees'], ['aircrafts', 'motorcycles', 'trees'], ['aircrafts', 'motorcycles', 'sunsets'], ['aircrafts', 'moto-racings', 'sunsets'], ['aircrafts', 'fireworks', 'trees'], ['aircrafts', 'fireworks', 'motorcycles'], ['aircrafts', 'fireworks', 'moto-racings'], ['aircrafts', 'fields', 'trees'], ['aircrafts', 'fields', 'motorcycles'], ['aircrafts', 'fields', 'moto-racings'], ['aircrafts', 'fields', 'fireworks'], ['aircrafts', 'cars', 'trees'], ['aircrafts', 'cars', 'fireworks'], ['aircrafts', 'buildings', 'fireworks'], ['aircrafts', 'buildings', 'fields'], ['aircrafts', 'fireworks', 'sunsets'], ['aircrafts', 'cars', 'sunsets'], ['aircrafts', 'cars', 'fields'], ['aircrafts', 'flowers', 'sunsets'], ['aircrafts', 'flowers', 'motorcycles'], ['aircrafts', 'fireworks', 'flowers'], ['aircrafts', 'buildings', 'motorcycles']]
+Total best scenarios: 33189
+
+##### 4 classes #####
+Maximum accuracy: 1.0
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (21):
+[['fireworks', 'motorcycles', 'sunsets', 'trees'], ['fireworks', 'flowers', 'motorcycles', 'mountains'], ['fields', 'fireworks', 'mountains', 'trees'], ['fields', 'fireworks', 'motorcycles', 'trees'], ['cars', 'fields', 'fireworks', 'trees'], ['buildings', 'moto-racings', 'motorcycles', 'sunsets'], ['beaches', 'fireworks', 'motorcycles', 'trees'], ['beaches', 'buildings', 'fireworks', 'motorcycles'], ['beaches', 'cars', 'fireworks', 'trees'], ['aircrafts', 'fireworks', 'motorcycles', 'trees'], ['aircrafts', 'fields', 'fireworks', 'motorcycles'], ['aircrafts', 'fields', 'fireworks', 'moto-racings'], ['aircrafts', 'fields', 'fireworks', 'trees'], ['aircrafts', 'cars', 'fireworks', 'trees'], ['aircrafts', 'buildings', 'fields', 'fireworks'], ['aircrafts', 'motorcycles', 'sunsets', 'trees'], ['aircrafts', 'fireworks', 'sunsets', 'trees'], ['aircrafts', 'fireworks', 'motorcycles', 'sunsets'], ['aircrafts', 'cars', 'fields', 'fireworks'], ['aircrafts', 'flowers', 'motorcycles', 'sunsets'], ['aircrafts', 'fireworks', 'flowers', 'motorcycles']]
+Total best scenarios: 103373
+
+##### 5 classes #####
+Maximum accuracy: 1.0
+Possible classes (5):
+['aircrafts', 'fireworks', 'motorcycles', 'sunsets', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'fireworks', 'motorcycles', 'sunsets', 'trees']]
+Total best scenarios: 104131
+
+##### 6 classes #####
+Maximum accuracy: 0.973333333333
+Possible classes (10):
+['aircrafts', 'beaches', 'cars', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (6):
+[['aircrafts', 'beaches', 'fireworks', 'moto-racings', 'sunsets', 'trees'], ['aircrafts', 'fireworks', 'motorcycles', 'mountains', 'sunsets', 'trees'], ['aircrafts', 'fireworks', 'flowers', 'motorcycles', 'sunsets', 'trees'], ['aircrafts', 'beaches', 'fireworks', 'motorcycles', 'sunsets', 'trees'], ['aircrafts', 'beaches', 'cars', 'fireworks', 'motorcycles', 'trees'], ['aircrafts', 'beaches', 'fireworks', 'flowers', 'motorcycles', 'trees']]
+Total best scenarios: 67311
+
+##### 7 classes #####
+Maximum accuracy: 0.96
+Possible classes (8):
+['aircrafts', 'beaches', 'fireworks', 'flowers', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (2):
+[['aircrafts', 'fireworks', 'flowers', 'motorcycles', 'mountains', 'sunsets', 'trees'], ['aircrafts', 'beaches', 'fireworks', 'flowers', 'motorcycles', 'sunsets', 'trees']]
+Total best scenarios: 13346
+
+##### 8 classes #####
+Maximum accuracy: 0.935
+Possible classes (8):
+['aircrafts', 'beaches', 'cars', 'fireworks', 'flowers', 'motorcycles', 'sunsets', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'beaches', 'cars', 'fireworks', 'flowers', 'motorcycles', 'sunsets', 'trees']]
+Total best scenarios: 1619
+
+##### 9 classes #####
+Maximum accuracy: 0.902222222222
+Possible classes (9):
+['aircrafts', 'beaches', 'buildings', 'fireworks', 'flowers', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'beaches', 'buildings', 'fireworks', 'flowers', 'motorcycles', 'mountains', 'sunsets', 'trees']]
+Total best scenarios: 1
+Total max scenarios: 1
+Max scenarios:
+[(('aircrafts', (25, 512)), ('beaches', (15, 512)), ('buildings', (20, 512)), ('fireworks', (20, 256)), ('flowers', (20, 512)), ('motorcycles', (30, 256)), ('mountains', (20, 512)), ('sunsets', (30, 256)), ('trees', (15, 512)))]
+
+
+############################## entropy ##############################
+##### 2 classes #####
+Maximum accuracy: 1.0
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (46):
+[['sunsets', 'trees'], ['mountains', 'trees'], ['motorcycles', 'trees'], ['motorcycles', 'sunsets'], ['motorcycles', 'mountains'], ['moto-racings', 'motorcycles'], ['moto-racings', 'sunsets'], ['flowers', 'trees'], ['flowers', 'motorcycles'], ['flowers', 'sunsets'], ['flowers', 'mountains'], ['fireworks', 'trees'], ['fireworks', 'sunsets'], ['fireworks', 'mountains'], ['fireworks', 'motorcycles'], ['fireworks', 'moto-racings'], ['fireworks', 'flowers'], ['fields', 'trees'], ['fields', 'motorcycles'], ['fields', 'flowers'], ['fields', 'fireworks'], ['fields', 'mountains'], ['fields', 'moto-racings'], ['cars', 'motorcycles'], ['cars', 'fields'], ['cars', 'fireworks'], ['cars', 'trees'], ['buildings', 'sunsets'], ['buildings', 'motorcycles'], ['buildings', 'fireworks'], ['buildings', 'fields'], ['buildings', 'cars'], ['buildings', 'mountains'], ['buildings', 'flowers'], ['beaches', 'trees'], ['beaches', 'motorcycles'], ['beaches', 'fireworks'], ['beaches', 'buildings'], ['beaches', 'fields'], ['aircrafts', 'trees'], ['aircrafts', 'motorcycles'], ['aircrafts', 'fireworks'], ['aircrafts', 'buildings'], ['aircrafts', 'fields'], ['aircrafts', 'sunsets'], ['aircrafts', 'cars']]
+Total best scenarios: 10477
+
+##### 3 classes #####
+Maximum accuracy: 1.0
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (66):
+[['motorcycles', 'sunsets', 'trees'], ['motorcycles', 'mountains', 'trees'], ['moto-racings', 'motorcycles', 'sunsets'], ['flowers', 'motorcycles', 'trees'], ['flowers', 'motorcycles', 'sunsets'], ['flowers', 'motorcycles', 'mountains'], ['flowers', 'mountains', 'trees'], ['fireworks', 'sunsets', 'trees'], ['fireworks', 'mountains', 'trees'], ['fireworks', 'motorcycles', 'mountains'], ['fireworks', 'motorcycles', 'trees'], ['fireworks', 'motorcycles', 'sunsets'], ['fireworks', 'moto-racings', 'motorcycles'], ['fireworks', 'moto-racings', 'sunsets'], ['fireworks', 'flowers', 'trees'], ['fireworks', 'flowers', 'motorcycles'], ['fireworks', 'flowers', 'sunsets'], ['fireworks', 'flowers', 'mountains'], ['fields', 'flowers', 'motorcycles'], ['fields', 'fireworks', 'trees'], ['fields', 'fireworks', 'motorcycles'], ['fields', 'fireworks', 'flowers'], ['fields', 'motorcycles', 'trees'], ['fields', 'motorcycles', 'mountains'], ['fields', 'fireworks', 'mountains'], ['fields', 'moto-racings', 'motorcycles'], ['fields', 'fireworks', 'moto-racings'], ['cars', 'fields', 'motorcycles'], ['cars', 'fireworks', 'motorcycles'], ['cars', 'motorcycles', 'trees'], ['cars', 'fireworks', 'trees'], ['cars', 'fields', 'fireworks'], ['buildings', 'motorcycles', 'sunsets'], ['buildings', 'fireworks', 'motorcycles'], ['buildings', 'fields', 'motorcycles'], ['buildings', 'fields', 'fireworks'], ['buildings', 'cars', 'motorcycles'], ['buildings', 'cars', 'fields'], ['buildings', 'motorcycles', 'mountains'], ['buildings', 'flowers', 'motorcycles'], ['buildings', 'fireworks', 'mountains'], ['buildings', 'fireworks', 'flowers'], ['buildings', 'fireworks', 'sunsets'], ['buildings', 'fields', 'mountains'], ['buildings', 'fields', 'flowers'], ['buildings', 'flowers', 'mountains'], ['beaches', 'motorcycles', 'trees'], ['beaches', 'fireworks', 'trees'], ['beaches', 'fireworks', 'motorcycles'], ['beaches', 'buildings', 'motorcycles'], ['beaches', 'buildings', 'fireworks'], ['beaches', 'fields', 'fireworks'], ['beaches', 'buildings', 'fields'], ['aircrafts', 'motorcycles', 'trees'], ['aircrafts', 'fireworks', 'trees'], ['aircrafts', 'fireworks', 'motorcycles'], ['aircrafts', 'buildings', 'motorcycles'], ['aircrafts', 'buildings', 'fireworks'], ['aircrafts', 'fields', 'motorcycles'], ['aircrafts', 'fields', 'fireworks'], ['aircrafts', 'sunsets', 'trees'], ['aircrafts', 'motorcycles', 'sunsets'], ['aircrafts', 'fireworks', 'sunsets'], ['aircrafts', 'buildings', 'sunsets'], ['aircrafts', 'buildings', 'fields'], ['aircrafts', 'fields', 'trees']]
+Total best scenarios: 145133
+
+##### 4 classes #####
+Maximum accuracy: 1.0
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (37):
+[['flowers', 'motorcycles', 'mountains', 'trees'], ['fireworks', 'motorcycles', 'mountains', 'trees'], ['fireworks', 'motorcycles', 'sunsets', 'trees'], ['fireworks', 'moto-racings', 'motorcycles', 'sunsets'], ['fireworks', 'flowers', 'motorcycles', 'trees'], ['fireworks', 'flowers', 'motorcycles', 'sunsets'], ['fireworks', 'flowers', 'mountains', 'trees'], ['fireworks', 'flowers', 'motorcycles', 'mountains'], ['fields', 'fireworks', 'flowers', 'motorcycles'], ['fields', 'fireworks', 'motorcycles', 'trees'], ['fields', 'fireworks', 'motorcycles', 'mountains'], ['fields', 'fireworks', 'moto-racings', 'motorcycles'], ['cars', 'fireworks', 'motorcycles', 'trees'], ['cars', 'fields', 'fireworks', 'motorcycles'], ['buildings', 'fields', 'fireworks', 'motorcycles'], ['buildings', 'cars', 'fields', 'motorcycles'], ['buildings', 'fireworks', 'motorcycles', 'mountains'], ['buildings', 'fireworks', 'flowers', 'motorcycles'], ['buildings', 'fields', 'fireworks', 'mountains'], ['buildings', 'fields', 'fireworks', 'flowers'], ['buildings', 'fireworks', 'flowers', 'mountains'], ['buildings', 'fireworks', 'motorcycles', 'sunsets'], ['beaches', 'fireworks', 'motorcycles', 'trees'], ['beaches', 'buildings', 'fireworks', 'motorcycles'], ['beaches', 'buildings', 'fields', 'fireworks'], ['aircrafts', 'fireworks', 'motorcycles', 'trees'], ['aircrafts', 'buildings', 'fireworks', 'motorcycles'], ['aircrafts', 'fields', 'fireworks', 'motorcycles'], ['aircrafts', 'motorcycles', 'sunsets', 'trees'], ['aircrafts', 'fireworks', 'sunsets', 'trees'], ['aircrafts', 'fireworks', 'motorcycles', 'sunsets'], ['aircrafts', 'buildings', 'motorcycles', 'sunsets'], ['aircrafts', 'buildings', 'fireworks', 'sunsets'], ['aircrafts', 'buildings', 'fields', 'fireworks'], ['aircrafts', 'fields', 'motorcycles', 'trees'], ['aircrafts', 'fields', 'fireworks', 'trees'], ['aircrafts', 'buildings', 'fields', 'motorcycles']]
+Total best scenarios: 979193
+
+##### 5 classes #####
+Maximum accuracy: 1.0
+Possible classes (9):
+['aircrafts', 'buildings', 'fields', 'fireworks', 'flowers', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (5):
+[['aircrafts', 'fireworks', 'motorcycles', 'sunsets', 'trees'], ['aircrafts', 'buildings', 'fields', 'fireworks', 'motorcycles'], ['aircrafts', 'fields', 'fireworks', 'motorcycles', 'trees'], ['aircrafts', 'buildings', 'fireworks', 'motorcycles', 'sunsets'], ['fireworks', 'flowers', 'motorcycles', 'mountains', 'trees']]
+Total best scenarios: 1914688
+
+##### 6 classes #####
+Maximum accuracy: 0.98
+Possible classes (11):
+['aircrafts', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (9):
+[['aircrafts', 'fireworks', 'moto-racings', 'motorcycles', 'sunsets', 'trees'], ['aircrafts', 'fireworks', 'flowers', 'motorcycles', 'sunsets', 'trees'], ['aircrafts', 'fields', 'fireworks', 'moto-racings', 'motorcycles', 'trees'], ['aircrafts', 'buildings', 'fields', 'fireworks', 'moto-racings', 'motorcycles'], ['aircrafts', 'buildings', 'fireworks', 'moto-racings', 'motorcycles', 'sunsets'], ['aircrafts', 'buildings', 'fields', 'fireworks', 'motorcycles', 'trees'], ['buildings', 'fields', 'fireworks', 'motorcycles', 'mountains', 'trees'], ['cars', 'fields', 'fireworks', 'motorcycles', 'mountains', 'trees'], ['fireworks', 'flowers', 'moto-racings', 'motorcycles', 'sunsets', 'trees']]
+Total best scenarios: 1703926
+
+##### 7 classes #####
+Maximum accuracy: 0.965714285714
+Possible classes (7):
+['aircrafts', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'sunsets', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'sunsets', 'trees']]
+Total best scenarios: 303382
+
+##### 8 classes #####
+Maximum accuracy: 0.93
+Possible classes (9):
+['aircrafts', 'beaches', 'buildings', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'sunsets', 'trees']
+Possible decision groups (3):
+[['aircrafts', 'buildings', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'sunsets', 'trees'], ['aircrafts', 'beaches', 'buildings', 'fireworks', 'moto-racings', 'motorcycles', 'sunsets', 'trees'], ['aircrafts', 'beaches', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'sunsets', 'trees']]
+Total best scenarios: 18557
+
+##### 9 classes #####
+Maximum accuracy: 0.906666666667
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (2):
+[['aircrafts', 'beaches', 'buildings', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'sunsets', 'trees'], ['aircrafts', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'motorcycles', 'mountains', 'trees']]
+Total best scenarios: 27
+Total max scenarios: 4
+Max scenarios:
+[(('aircrafts', (30, 512)), ('beaches', (5, 128)), ('buildings', (5, 256)), ('fireworks', (25, 256)), ('flowers', (30, 256)), ('moto-racings', (5, 256)), ('motorcycles', (15, 512)), ('sunsets', (10, 128)), ('trees', (5, 256))), (('aircrafts', (30, 512)), ('beaches', (5, 128)), ('buildings', (5, 256)), ('fireworks', (15, 128)), ('flowers', (30, 256)), ('moto-racings', (10, 256)), ('motorcycles', (15, 512)), ('sunsets', (10, 128)), ('trees', (5, 256))), (('aircrafts', (30, 512)), ('beaches', (5, 128)), ('buildings', (5, 256)), ('fireworks', (15, 128)), ('flowers', (30, 256)), ('moto-racings', (5, 256)), ('motorcycles', (15, 512)), ('sunsets', (10, 128)), ('trees', (5, 256))), (('aircrafts', (30, 256)), ('buildings', (25, 512)), ('cars', (25, 512)), ('fields', (20, 128)), ('fireworks', (30, 512)), ('flowers', (30, 256)), ('motorcycles', (15, 512)), ('mountains', (30, 512)), ('trees', (30, 512)))]
+
+##### 10 classes* #####
+Maximum accuracy: 0.864
+Possible classes (10):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'sunsets', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'beaches', 'buildings', 'cars', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'sunsets', 'trees']]
+Total best scenarios: 81
+Total max scenarios: 2
+Max scenarios:
+[(('aircrafts', (30, 512)), ('beaches', (5, 128)), ('buildings', (5, 256)), ('cars', (25, 512)), ('fireworks', (20, 128)), ('flowers', (30, 256)), ('moto-racings', (10, 256)), ('motorcycles', (15, 512)), ('sunsets', (10, 128)), ('trees', (5, 256))), (('aircrafts', (30, 512)), ('beaches', (5, 128)), ('buildings', (5, 256)), ('cars', (25, 512)), ('fireworks', (15, 128)), ('flowers', (30, 256)), ('moto-racings', (10, 256)), ('motorcycles', (15, 512)), ('sunsets', (10, 128)), ('trees', (5, 256)))]
+
+##### 11 classes* #####
+Maximum accuracy: 0.814545454545
+Possible classes (11):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'beaches', 'buildings', 'cars', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']]
+Total best scenarios: 115
+Total max scenarios: 2
+Max scenarios:
+[(('aircrafts', (30, 512)), ('beaches', (5, 128)), ('buildings', (5, 256)), ('cars', (25, 512)), ('fireworks', (20, 128)), ('flowers', (30, 256)), ('moto-racings', (10, 256)), ('motorcycles', (15, 512)), ('mountains', (30, 512)), ('sunsets', (10, 128)), ('trees', (5, 256))), (('aircrafts', (30, 512)), ('beaches', (5, 128)), ('buildings', (5, 256)), ('cars', (25, 512)), ('fireworks', (15, 128)), ('flowers', (30, 256)), ('moto-racings', (10, 256)), ('motorcycles', (15, 512)), ('mountains', (30, 512)), ('sunsets', (10, 128)), ('trees', (5, 256)))]
+
+##### 12 classes* #####
+Maximum accuracy: 0.75
+Possible classes (12):
+['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']
+Possible decision groups (1):
+[['aircrafts', 'beaches', 'buildings', 'cars', 'fields', 'fireworks', 'flowers', 'moto-racings', 'motorcycles', 'mountains', 'sunsets', 'trees']]
+Total best scenarios: 32
+Total max scenarios: 1
+Max scenarios:
+[(('aircrafts', (30, 512)), ('beaches', (10, 128)), ('buildings', (5, 256)), ('cars', (25, 512)), ('fields', (20, 128)), ('fireworks', (15, 128)), ('flowers', (30, 256)), ('moto-racings', (10, 256)), ('motorcycles', (15, 512)), ('mountains', (30, 512)), ('sunsets', (10, 128)), ('trees', (5, 256)))]
+
+Total elapsed time: 00:56:05
