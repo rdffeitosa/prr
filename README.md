@@ -5,7 +5,7 @@ PhD Thesis supervised by Professor PhD Anderson da Silva Soares
 
 Feitosa, R. D. F. (2020). Scene classification using randomness analysis by approximation of Kolmogorov's complexity. Institute of Informatics, Federal University of Goiás.
 
-The source code available was coded in Python 2.7 and tested on Linux-based systems.
+The source code available was implemented in Python 2.7 and tested on Linux-based systems.
 
 ## Directories structure
 - codes
