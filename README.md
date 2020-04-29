@@ -34,18 +34,30 @@ A base de dados utilizada foi a *GHIM-10k*[1], originalmente composta por 20 cat
 
 ## Execute o PRA
 
+NOTAÇÃO
+- [...] parâmetro opcional
+- '*value_1, value_2, value_n*' (**com vírgula**) escolha apenas um dos possíveis valores
+- '*value_1 value_2 value_n*' (**sem vírgula**) permite múltiplos valores
+
 ### Módulo de classificação
 Os modelos pré-treinados disponíveis em **treinedModels** e as sugestões de melhores parâmatros podem ser utilizados para classificar as imagens disponíveis no diretório **dataset**
 
 #### classifierPRR.py
 SINTAXE
 
-classifierPRR.py --input-folder *<folder path with images for classification>* --measure-engine *<zip, gzip, bzip2, LZWHuffman or entropy>* --classes-parameters *<tuple of classes and parameters used for classification between "...">* --training-file *<training data file>* --quantization-colors *<number of colors>* [--number-processes *<number of parallel processes>* --id-experiment *<identification of experiments>* archive-results verbose-mode report-mode]
-  
-PARÂMETROS
-- 
+classifierPRR.py --input-folder *<folder path with images for classification>* --measure-engine *<zip, gzip, bzip2, LZWHuffman or entropy>* --classes-parameters *<tuple of classes and parameters used for classification between "..."*>* --training-file *<training data file>* --quantization-colors *<number of colors>* [--number-processes *<number of parallel processes>* --id-experiment *<identification of experiments>* archive-results verbose-mode report-mode]
+
+* As tuplas devem ser no formato (('classname', (vector_size, codebook_size)), ('classname', (vector_size, codebook_size)), ..., ('classname', (vector_size, codebook_size)))
+
+- archive-results: mantém os diretórios criados durante a classificação com as imagens separadas por classe
+- verbose-mode: ativa as mensagens do script
+- report-mode: cria um arquivo externo com a saída do script
+
 EXEMPLO
 
+```
+python classifierPRR.py --input-folder ../dataset/partitionD/test --measure-engine entropy --classes-parameters "(('aircrafts', (30, 512)), ('beaches', (5, 128)), ('buildings', (5, 256)), ('cars', (25, 512)), ('fields', (5, 128)), ('fireworks', (30, 256)), ('flowers', (25, 256)), ('moto-racings', (10, 256)), ('motorcycles', (15, 512)), ('mountains', (15, 256)), ('sunsets', (5, 128)), ('trees', (5, 256)))" --training-file ../trainedModels/partitionA/trainingData.pckl.bz2 --quantization-colors 256 --number-processes 4 --id-experiment teste_final archive-results verbose-mode report-mode
+```
 
 ### Módulo de treinamento
 
@@ -53,8 +65,6 @@ EXEMPLO
 SINTAXE
 
 trainingPrototyping.py --input-folder *<folder path with images for training>* --quantization-colors *<number of colors>* --training-convergence *<convergence value>* [--vectors-sizes *<vectors sizes>* --codebooks-sizes *<number of symbols>* --classes-parameters *<classes and your specific parameters in a list of tuples "(('classname', (vector size, codebook size)), ('classname', (vector size, codebook size)), ..., ('classname', (vector size, codebook size)))">* --number-processes *<number of parallel processes>*]
-
-PARÂMETROS
 
 EXEMPLO
 
@@ -64,8 +74,6 @@ SINTAXE
 
 trainingQuantization.py --input-folder *<input folder with images for quantization>* --quantization-colors *<number of colors>* --training-file *<training data file>* [--number-processes *<number of parallel processes>*]
 
-PARÂMETROS
-
 EXEMPLO
 
 
@@ -73,8 +81,6 @@ EXEMPLO
 SINTAXE
 
 trainingMeasurement.py --input-data *<input with quantizations data file>* [--training-file *<training data file>*] --measure-engines *<'zip gzip bzip2 LZWHuffman entropy'>* [--number-processes *<number of parallel processes>*]
-
-PARÂMETROS
 
 EXEMPLO
 
@@ -84,8 +90,6 @@ SINTAXE
 
 trainingValidation.py --input-data *<input measures data file>* --reference-rate *<minimum accuracy desired>* --rate-step *<step of decreasing of the reference rate for scrap round>* [--selected-measures *<'zip gzip bzip2 LZWHuffman entropy'>* --max-memory *<maximum amount of memory to be used>* --number-processes *<number of parallel processes>*]
 
-PARÂMETROS
-
 EXEMPLO
 
 
@@ -93,7 +97,5 @@ EXEMPLO
 
 SINTAXE
 trainingReportValidation.py --input-data *<file with best scenarios>*
-
-PARÂMETROS
 
 EXEMPLO
