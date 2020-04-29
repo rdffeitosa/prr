@@ -9,18 +9,18 @@ The available source code was implemented in Python 2.7 and tested on Linux-base
 
 ## Directories structure
 ```bash
-- prr
-- ├── codes
-- │   └── include
-- ├── dataset
-- │   ├── images
-- │   ├── partitionA
-- │   ├── partitionB
-- │   └── partitionC
-- └── trainedModels
--     ├── partitionA
--     ├── partitionB
--     └── partitionC
+prr
+├── codes
+│   └── include
+├── dataset
+│   ├── images
+│   ├── partitionA
+│   ├── partitionB
+│   └── partitionC
+└── trainedModels
+    ├── partitionA
+    ├── partitionB
+    └── partitionC
 ```
    
 The **codes** directory contains the scripts for all the method steps described below, as well as auxiliary functions. The **dataset** directory contains the images used in the experiments and 3 suggestions for partitioning between training and test sets. The **trainedModels** directory contains models trained in each of the suggested partitions and the best training parameters for each class.
