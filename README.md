@@ -62,14 +62,14 @@ python classifierPRR.py --input-folder ../dataset/partitionA/test --measure-engi
 
 ### Módulo de treinamento
 
-Run the below scripts in ordered sequence to follow the method pipeline. All scripts generate a *pckl.bz2* file with the result and an auxiliary txt file with the details of the execution. These files are generated at the root of the / prr repository.
+Run the below scripts in ordered sequence to follow the method pipeline. All scripts generate a *pckl.bz2* file with the result and an auxiliary *txt* file with the execution details. These files are generated at the root of repository */prr*.
 
 #### trainingPrototyping.py
 SYNTAX
 
 trainingPrototyping.py --input-folder *<folder path with images for training>* --quantization-colors *<number of colors>* --training-convergence *<convergence value>* [--vectors-sizes *<vectors sizes>* --codebooks-sizes *<number of symbols>* --classes-parameters *<classes and your specific parameters in a list of tuples "(('classname', (vector size, codebook size)), ('classname', (vector size, codebook size)), ..., ('classname', (vector size, codebook size)))">* --number-processes *<number of parallel processes>*]*
   
-\* Especifique *--vectors-sizes* e *--codebooks-sizes* para treinar todas as classes com os mesmos parâmetros **OU** *--classes-parameters* para especificar individualmente os parâmetros de treinamento.
+\* Specify *--vectors-sizes* and *--codebooks-sizes* to train all classes with the same parameters **OR** *--classes-parameters* to determine training parameters individually.
 
 EXAMPLE
 
@@ -96,7 +96,7 @@ SYNTAX
 
 trainingMeasurement.py --input-data *<input with quantizations data file>* [--training-file *<training data file>*]* --measure-engines *<'zip gzip bzip2 LZWHuffman entropy'>* [--number-processes *<number of parallel processes>*]
   
-\* Caso utilize apenas a medida *entropy* em *--measure-engines* não é necessário especificar *--training-file*
+\* If using only the *entropy* measure in *--measure-engines* isn't necessary to specify *--training-file*.
 
 EXAMPLE
 
