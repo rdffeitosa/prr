@@ -48,7 +48,7 @@ NOTATION
 The treined models avaliable in **treinedModels** and the best parameters suggested can be used for classification the images of **dataset**.
 
 #### classifierPRR.py
-SYNTAX
+USAGE
 
 classifierPRR.py --input-folder *<folder path with images for classification>* --measure-engine *<zip, gzip, bzip2, LZWHuffman or entropy>* --classes-parameters *<tuple of classes and parameters used for classification between "..."*>* --training-file *<training data file>* --quantization-colors *<number of colors>* [--number-processes *<number of parallel processes>* --id-experiment *<identification of experiments>* archive-results verbose-mode report-mode]
 
@@ -69,7 +69,7 @@ python classifierPRR.py --input-folder ../dataset/partitionA/test --measure-engi
 Run the below scripts in ordered sequence to follow the method pipeline. All scripts generate a *pckl.bz2* file with the result that will used in the next step and an auxiliary *txt* file with the execution details. These files are saved in the root of repository */prr*.
 
 #### trainingPrototyping.py
-SYNTAX
+USAGE
 
 trainingPrototyping.py --input-folder *<folder path with images for training>* --quantization-colors *<number of colors>* --training-convergence *<convergence value>* [--vectors-sizes *<vectors sizes>* --codebooks-sizes *<number of symbols>* --classes-parameters *<classes and your specific parameters in a list of tuples "(('classname', (vector size, codebook size)), ('classname', (vector size, codebook size)), ..., ('classname', (vector size, codebook size)))">* --number-processes *<number of parallel processes>*]*
   
@@ -85,7 +85,7 @@ python trainingPrototyping.py --input-folder ../dataset/partitionA/training --qu
 ```
 
 #### trainingQuantization.py
-SYNTAX
+USAGE
 
 trainingQuantization.py --input-folder *<input folder with images for quantization>* --quantization-colors *<number of colors>* --training-file *<training data file>* [--number-processes *<number of parallel processes>*]
 
@@ -96,7 +96,7 @@ python trainingQuantization.py --input-folder ../dataset/partitionA/training --q
 ```
 
 #### trainingMeasurement.py
-SYNTAX
+USAGE
 
 trainingMeasurement.py --input-data *<input with quantizations data file>* [--training-file *<training data file>*]* --measure-engines *<'zip gzip bzip2 LZWHuffman entropy'>* [--number-processes *<number of parallel processes>*]
   
@@ -109,7 +109,7 @@ python trainingMeasurement.py --input-data ../quantizationsData.pckl.bz2 --train
 ```
 
 #### trainingValidation.py
-SYNTAX
+USAGE
 
 trainingValidation.py --input-data *<input measures data file>* --reference-rate *<minimum accuracy desired>* --rate-step *<step of decreasing of the reference rate for scrap round>* [--selected-measures *<'zip gzip bzip2 LZWHuffman entropy'>* --max-memory *<maximum amount of memory to be used>* --number-processes *<number of parallel processes>*]
 
@@ -121,7 +121,7 @@ python trainingValidation.py --input-data ../measurementsData.pckl.bz2 --referen
 
 #### trainingReportValidation.py
 
-SYNTAX
+USAGE
 trainingReportValidation.py --input-data *<file with best scenarios>*
   
 * Use the suggested parameter tuples for the classes to run the script *classifierPRR.py*
