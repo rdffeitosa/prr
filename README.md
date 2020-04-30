@@ -45,7 +45,7 @@ NOTATION
 - '*value_1 value_2 value_n*' (**without comma**) alows multiple values
 
 ### Classification module
-The treined models avaliable in **treinedModels** and the best parameters suggested can be used for classification the images of **dataset**.
+The trained models avaliable in **trainedModels** and the best parameters suggested can be used for classification the images of **dataset**.
 
 #### classifierPRR.py
 USAGE
