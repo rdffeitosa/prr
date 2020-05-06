@@ -23,7 +23,7 @@ prr
     └── partitionC
 ```
    
-The **codes** directory contains the scripts for all the method steps described below, as well as auxiliary functions. The **dataset** directory contains the images used in the experiments and 3 suggestions for partitioning between training and test sets. The **trainedModels** directory contains models trained in each of the suggested partitions and the best training parameters for each class.
+The **codes** directory contains the scripts for all the method steps described below, as well as auxiliary functions. The **dataset** directory contains the images used in the experiments and 3 suggestions for partitioning between training and test sets. The **trainedModels** directory contains models trained in each of the suggested partitions and the best training parameters for each class. These models was trained with windows 5x5, 10x10, 15x15, 20x20, 25x25 and 30x30; for each window size was obtained 64, 128, 256 and 512 codevectors.
 
 ## PRR architecture
 ![](https://github.com/rdffeitosa/prr/blob/master/prr.png)
@@ -41,7 +41,7 @@ The GHIM-10k dataset [1] was used, originally composed of 20 scene categories, e
 
 NOTATION
 - [...] optional parameter
-- '*value_1, value_2, value_n*' (**with comma**) escolha apenas um dos possíveis valoreschoose only one of the possible values
+- '*value_1, value_2, value_n*' (**with comma**) choose only one of the possible values
 - '*value_1 value_2 value_n*' (**without comma**) alows multiple values
 
 ### Classification module
@@ -50,9 +50,9 @@ The trained models avaliable in **trainedModels** and the best parameters sugges
 #### classifierPRR.py
 USAGE
 
-classifierPRR.py --input-folder *<folder path with images for classification>* --measure-engine *<zip, gzip, bzip2, LZWHuffman or entropy>* --classes-parameters *<tuple of classes and parameters used for classification between "..."*>* --training-file *<training data file>* --quantization-colors *<number of colors>* [--number-processes *<number of parallel processes>* --id-experiment *<identification of experiments>* archive-results verbose-mode report-mode]
+classifierPRR.py --input-folder <*folder path with images for classification*> --measure-engine <*zip, gzip, bzip2, LZWHuffman or entropy*> --classes-parameters <*tuple of classes and parameters used for classification between "..."**> --training-file <*training data file*> --quantization-colors <*number of colors*> [--number-processes <*number of parallel processes*> --id-experiment <*identification of experiments*> archive-results verbose-mode report-mode]
 
-\* The tuples must be in format (('classname', (vector_size, codebook_size)), ('classname', (vector_size, codebook_size)), ..., ('classname', (vector_size, codebook_size)))
+\* The tuples must be in format (('classname', (window_size, codebook_size)), ('classname', (window_size, codebook_size)), ..., ('classname', (window_size, codebook_size))) and the window_size value is a integer that represents the width and heigth of a squared window.
 
 - archive-results: maintains directories created in the classification, with images separated by class
 - verbose-mode: enables script messages
@@ -64,14 +64,14 @@ EXAMPLE
 python classifierPRR.py --input-folder ../dataset/partitionA/test --measure-engine entropy --classes-parameters "(('aircrafts', (30, 512)), ('beaches', (5, 128)), ('buildings', (5, 256)), ('cars', (25, 512)), ('fields', (5, 128)), ('fireworks', (30, 256)), ('flowers', (25, 256)), ('moto-racings', (10, 256)), ('motorcycles', (15, 512)), ('mountains', (15, 256)), ('sunsets', (5, 128)), ('trees', (5, 256)))" --training-file ../trainedModels/partitionA/trainingData.pckl.bz2 --quantization-colors 256 --number-processes 4 --id-experiment teste_final archive-results verbose-mode report-mode
 ```
 
-### Módulo de treinamento
+### Training module
 
 Run the below scripts in ordered sequence to follow the method pipeline. All scripts generate a *pckl.bz2* file with the result that will used in the next step and an auxiliary *txt* file with the execution details. These files are saved in the root of repository */prr*.
 
 #### trainingPrototyping.py
 USAGE
 
-trainingPrototyping.py --input-folder *<folder path with images for training>* --quantization-colors *<number of colors>* --training-convergence *<convergence value>* [--vectors-sizes *<vectors sizes>* --codebooks-sizes *<number of symbols>* --classes-parameters *<classes and your specific parameters in a list of tuples "(('classname', (vector size, codebook size)), ('classname', (vector size, codebook size)), ..., ('classname', (vector size, codebook size)))">* --number-processes *<number of parallel processes>*]*
+trainingPrototyping.py --input-folder <*folder path with images for training*> --quantization-colors <*number of colors*> --training-convergence <*convergence value*> [--vectors-sizes <*vectors sizes*> --codebooks-sizes <*number of symbols*> --classes-parameters <*classes and your specific parameters in a list of tuples "(('classname', (vector size, codebook size)), ('classname', (vector size, codebook size)), ..., ('classname', (vector size, codebook size)))"*> --number-processes <*number of parallel processes*>]*
   
 \* Specify *--vectors-sizes* and *--codebooks-sizes* to train all classes with the same parameters **OR** *--classes-parameters* to determine training parameters individually.
 
@@ -87,7 +87,7 @@ python trainingPrototyping.py --input-folder ../dataset/partitionA/training --qu
 #### trainingQuantization.py
 USAGE
 
-trainingQuantization.py --input-folder *<input folder with images for quantization>* --quantization-colors *<number of colors>* --training-file *<training data file>* [--number-processes *<number of parallel processes>*]
+trainingQuantization.py --input-folder <*input folder with images for quantization*> --quantization-colors <*number of colors*> --training-file <*training data file*> [--number-processes <*number of parallel processes*>]
 
 EXAMPLE
 
@@ -98,7 +98,7 @@ python trainingQuantization.py --input-folder ../dataset/partitionA/training --q
 #### trainingMeasurement.py
 USAGE
 
-trainingMeasurement.py --input-data *<input with quantizations data file>* [--training-file *<training data file>*]* --measure-engines *<'zip gzip bzip2 LZWHuffman entropy'>* [--number-processes *<number of parallel processes>*]
+trainingMeasurement.py --input-data <*input with quantizations data file*> [--training-file <*training data file*>]* --measure-engines <*'zip gzip bzip2 LZWHuffman entropy'*> [--number-processes <*number of parallel processes*>]
   
 \* If using only the *entropy* measure in *--measure-engines* isn't necessary to specify *--training-file*.
 
@@ -111,7 +111,7 @@ python trainingMeasurement.py --input-data ../quantizationsData.pckl.bz2 --train
 #### trainingValidation.py
 USAGE
 
-trainingValidation.py --input-data *<input measures data file>* --reference-rate *<minimum accuracy desired>* --rate-step *<step of decreasing of the reference rate for scrap round>* [--selected-measures *<'zip gzip bzip2 LZWHuffman entropy'>* --max-memory *<maximum amount of memory to be used>* --number-processes *<number of parallel processes>*]
+trainingValidation.py --input-data <*input measures data file*> --reference-rate <*minimum accuracy desired*> --rate-step <*step of decreasing of the reference rate for scrap round*> [--selected-measures <*'zip gzip bzip2 LZWHuffman entropy'*> --max-memory <*maximum amount of memory to be used*> --number-processes <*number of parallel processes*>]
 
 EXAMPLE
 
@@ -122,7 +122,7 @@ python trainingValidation.py --input-data ../measurementsData.pckl.bz2 --referen
 #### trainingReportValidation.py
 
 USAGE
-trainingReportValidation.py --input-data *<file with best scenarios>*
+trainingReportValidation.py --input-data <*file with best scenarios*>
   
 * Use the suggested parameter tuples for the classes to run the script *classifierPRR.py*
 
