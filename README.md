@@ -50,7 +50,7 @@ The trained models avaliable in **trainedModels** and the best parameters sugges
 #### classifierPRR.py
 USAGE
 
-classifierPRR.py --input-folder <*folder path with images for classification*> --measure-engine <*zip, gzip, bzip2, LZWHuffman or entropy*> --classes-parameters <*tuple of classes and parameters used for classification between "..."**> --training-file <*training data file*> --quantization-colors <*number of colors*> [--number-processes <*number of parallel processes*> --id-experiment <*identification of experiments*> archive-results verbose-mode report-mode]
+classifierPRR.py --input-folder <*folder path with images for classification*> --measure-engine <*zip, gzip, bzip2, LZWHuffman or entropy*> --classes-parameters <*tuple of classes and parameters used for classification between "..."*>* --training-file <*training data file*> --quantization-colors <*number of colors*> [--number-processes <*number of parallel processes*> --id-experiment <*identification of experiments*> archive-results verbose-mode report-mode]
 
 \* The tuples must be in format (('classname', (window_size, codebook_size)), ('classname', (window_size, codebook_size)), ..., ('classname', (window_size, codebook_size))) and the window_size value is a integer that represents the width and heigth of a squared window.
 
@@ -75,11 +75,14 @@ trainingPrototyping.py --input-folder <*folder path with images for training*> -
   
 \* Specify *--vectors-sizes* and *--codebooks-sizes* to train all classes with the same parameters **OR** *--classes-parameters* to determine training parameters individually.
 
-EXAMPLE
+EXAMPLES
+
+Classes trained with same parameters
 
 ```
 python trainingPrototyping.py --input-folder ../dataset/partitionA/training --quantization-colors 256 --vectors-sizes '5 10 15 20 25 30' --codebooks-sizes '64 128 256 512' --training-convergence 0.1 --number-processes 4
 ```
+Classes trained with specific parameters
 ```
 python trainingPrototyping.py --input-folder ../dataset/partitionA/training --quantization-colors 256 --classes-parameters "(('aircrafts', (30, 512)), ('beaches', (5, 128)), ('buildings', (5, 256)), ('cars', (25, 512)), ('fields', (5, 128)), ('fireworks', (30, 256)), ('flowers', (25, 256)), ('moto-racings', (10, 256)), ('motorcycles', (15, 512)), ('mountains', (15, 256)), ('sunsets', (5, 128)), ('trees', (5, 256)))" --training-convergence 0.1 --number-processes 4
 ```
