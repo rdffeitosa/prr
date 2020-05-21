@@ -134,6 +134,7 @@ python trainingValidation.py --input-data ../measurementsData.pckl.bz2 --referen
 #### trainingReportValidation.py
 
 USAGE
+
 trainingReportValidation.py --input-data <*file with best scenarios*>
   
 * Use the suggested parameter tuples for the classes to run the script *classifierPRR.py*
