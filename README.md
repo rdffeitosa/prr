@@ -39,6 +39,15 @@ The GHIM-10k dataset [1] was used, originally composed of 20 scene categories, e
 
 ## Run the PRR
 
+### Dependencies
+
+Install the follows Python 2.7 packages to run PRR scripts below.
+
+- scipy
+- skimage
+- sklearn
+- tabulate
+
 NOTATION
 - [...] optional parameter
 - '*value_1, value_2, value_n*' (**with comma**) choose only one of the possible values
