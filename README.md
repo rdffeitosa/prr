@@ -5,7 +5,7 @@ The PRR was developed in the PhD Thesis supervised by Professor PhD Anderson da 
 
 Feitosa, R. D. F. (2020). Scene classification using randomness analysis by approximation of Kolmogorov's complexity. Institute of Informatics, Federal University of Goiás.
 
-The available source code was implemented in Python 2.7 and tested on Linux-based systems.
+**The available source code was implemented in Python 2.7 and tested on Linux-based systems.**
 
 ## Directories structure
 ```bash
